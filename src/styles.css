@@ -1,0 +1,78 @@
+/*#region CSS Reset*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+}
+html,
+body {
+    height: 100%;
+}
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+#root,
+#__next {
+    isolation: isolate;
+}
+/*#endregion*/
+
+/*#region Overall Page*/
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+/*#endregion*/
+
+/*#region Sidebar*/
+
+.logo-logo,
+.option-logo,
+.search-icon,
+.notification-icon {
+    width: 2rem;
+}
+
+.sidebar {
+    background-color: #10b981;
+}
+
+.logo {
+    display: flex;
+}
+
+.option {
+    display: flex;
+    gap: 10px;
+}
+
+/*#endregion*/
