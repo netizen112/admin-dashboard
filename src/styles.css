@@ -58,12 +58,14 @@ body {
 .logo-logo,
 .option-logo,
 .search-icon,
-.notification-icon {
+.notification-icon,
+.project-icon,
+.trending-pic {
     width: 2rem;
 }
 
 .sidebar {
-    background-color: #10b981;
+    background-color: #22c55e;
 }
 
 .logo {
@@ -73,6 +75,38 @@ body {
 .option {
     display: flex;
     gap: 10px;
+}
+
+/*#endregion*/
+
+/*#region Right Side*/
+/*This contains the navbar, projects, announcements and trending*/
+.right-side {
+
+}
+
+/*#endregion*/
+
+/*#region Projects*/
+
+.project {
+    border: 2px solid blue;
+}
+
+/*#endregion*/
+
+/*#region Announcements*/
+
+.announcement {
+    border: 2px solid green;
+}
+
+/*#endregion*/
+
+/*#region Trending*/
+
+.trending-item {
+    border: 2px solid red;
 }
 
 /*#endregion*/
