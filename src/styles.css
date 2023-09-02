@@ -114,11 +114,54 @@ body {
 /*#region Right Side*/
 /*This contains the navbar, projects, announcements and trending*/
 .right-side {
+    /* background-color: blueviolet; */
+    max-height: 100vh;
+}
+
+/*#endregion*/
+
+/*#region navbar*/
+
+.navbar {
+    display: grid;
+    /* grid-template-rows: 1fr 3fr; */
+}
+
+.navbar-line-1 {
+    border: 2px solid red;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-line-1-left,
+.navbar-line-1-right {
+    display: flex;
+    gap: 1rem;
+    padding: 0.5rem;
+}
+
+.navbar-line-2 {
+    border: 2px solid blue;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-line-2-left {
+    display: flex;
+}
+
+.nav-profile-pic {
+    width: 3rem;
 }
 
 /*#endregion*/
 
 /*#region Projects*/
+
+.main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
 
 .project {
     border: 2px solid blue;
