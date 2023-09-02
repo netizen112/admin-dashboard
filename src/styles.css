@@ -55,6 +55,38 @@ body {
 
 /*#region Sidebar*/
 
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.logo {
+    padding: 0.5rem;
+}
+
+.logo-text {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.option {
+    padding: 0.3rem;
+}
+
+.option-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 520;
+}
+
+.option-text:hover {
+    border-bottom: 2px solid white;
+    cursor: pointer;
+}
+
 .logo-logo,
 .option-logo,
 .search-icon,
@@ -82,7 +114,6 @@ body {
 /*#region Right Side*/
 /*This contains the navbar, projects, announcements and trending*/
 .right-side {
-
 }
 
 /*#endregion*/
