@@ -44,6 +44,15 @@ h6 {
 }
 /*#endregion*/
 
+/* * {
+    border: 2px solid red;
+} */
+
+html {
+    max-height: 100%;
+    min-height: 100%;
+}
+
 /*#region Overall Page*/
 
 body {
@@ -114,8 +123,10 @@ body {
 /*#region Right Side*/
 /*This contains the navbar, projects, announcements and trending*/
 .right-side {
-    /* background-color: blueviolet; */
+    background-color: blueviolet;
     max-height: 100vh;
+    height: 100%;
+    overflow:scroll;
 }
 
 /*#endregion*/
@@ -124,13 +135,23 @@ body {
 
 .navbar {
     display: grid;
-    /* grid-template-rows: 1fr 3fr; */
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+        rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 
 .navbar-line-1 {
-    border: 2px solid red;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.navbar-line-1-right>img {
+    width: 2rem;
+}
+
+.navbar-line-1-name {
+    font-weight: bold;
 }
 
 .navbar-line-1-left,
@@ -141,7 +162,6 @@ body {
 }
 
 .navbar-line-2 {
-    border: 2px solid blue;
     display: flex;
     justify-content: space-between;
 }
@@ -154,6 +174,10 @@ body {
     width: 3rem;
 }
 
+.name-username {
+    font-weight: bold;
+}
+
 /*#endregion*/
 
 /*#region Projects*/
@@ -161,18 +185,75 @@ body {
 .main {
     display: grid;
     grid-template-columns: 3fr 1fr;
+    padding: 1rem;
+    max-height: 100%;
+    gap: 2rem;
+    background-color: #a7f3d0;
+
+}
+
+.main-heading {
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    max-height: 100%;
+    gap: 2rem;
 }
 
 .project {
-    border: 2px solid blue;
+    text-overflow: ellipsis;
+    padding: 1rem;
+    background-color: #ecfdf5;
+    border-left: 0.3rem solid red;
+}
+
+.project:hover {
+    border-left-color: yellowgreen;
+}
+
+.project-heading {
+    font-weight: bold;
+}
+
+.icon-array {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: end;
+}
+
+.project-icon {
+    cursor: pointer;
 }
 
 /*#endregion*/
 
 /*#region Announcements*/
 
+.announcements {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.announcements-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
 .announcement {
-    border: 2px solid green;
+    background-color: #ecfdf5;
+    padding: 0.5rem;
+    border-radius: 3%;
+}
+
+.announcement-heading {
+    font-weight: bold;
 }
 
 /*#endregion*/
@@ -180,7 +261,6 @@ body {
 /*#region Trending*/
 
 .trending-item {
-    border: 2px solid red;
 }
 
 /*#endregion*/
